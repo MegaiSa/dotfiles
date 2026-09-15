@@ -1,0 +1,79 @@
+* {
+    accent:   #e69560;
+    text:     #e6c9a8;
+    subtext:  #c9a882;
+    
+    background-color: transparent;
+    text-color: @text;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+window {
+    background-image: url("~/.config/rofi/bg.png");
+    border-color: #e6956040;
+    border: 1px;
+    border-radius: 16px;
+    width: 320px;
+    location: east;
+    anchor: east;
+    x-offset: -16px;
+}
+
+mainbox {
+    background-color: transparent;
+}
+
+inputbar {
+    background-color: rgba(230,149,96,0.08);
+    border-color: rgba(230,149,96,0.2);
+    border-bottom: 1px;
+    padding: 12px 14px;
+    spacing: 10px;
+    children: [prompt, entry];
+}
+
+prompt {
+    text-color: @accent;
+}
+
+entry {
+    text-color: @text;
+    placeholder: "Rechercher...";
+    placeholder-color: rgba(230,149,96,0.4);
+}
+
+listview {
+    columns: 3;
+    lines: 3;
+    padding: 14px;
+    spacing: 8px;
+    layout: vertical;
+}
+
+element {
+    background-color: rgba(230,149,96,0.05);
+    border-radius: 12px;
+    padding: 10px 6px;
+    orientation: vertical;
+    children: [element-icon, element-text];
+}
+
+element selected {
+    background-color: rgba(230,149,96,0.18);
+    border-color: @accent;
+    border: 1px;
+}
+
+element-icon {
+    size: 38px;
+    horizontal-align: 0.5;
+}
+
+element-text {
+    horizontal-align: 0.5;
+    text-color: @subtext;
+    font: "sans 10";
+    padding: 4px 0 0 0;
+}

@@ -1,0 +1,23 @@
+{
+  "id": "spotify-widget",
+  "name": "Spotify Widget",
+  "version": "1.0.0",
+  "minNoctaliaVersion": "4.5.0",
+  "author": "anthony",
+  "license": "MIT",
+  "description": "Widget Spotify pour la bar Noctalia",
+  "tags": [
+    "Bar",
+    "Panel"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml",
+    "panel": "Panel.qml"
+  },
+  "dependencies": {
+    "plugins": []
+  },
+  "metadata": {
+    "defaultSettings": {}
+  }
+}

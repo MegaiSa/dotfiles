@@ -1,0 +1,21 @@
+{
+  "id": "custom-audio-visualizer",
+  "name": "Custom Audio Visualizer",
+  "version": "1.0.0",
+  "minNoctaliaVersion": "4.5.0",
+  "author": "anthony",
+  "license": "MIT",
+  "description": "Visualiseur audio transparent, redimensionnable en largeur/hauteur indépendamment, thémé avec la palette Noctalia",
+  "tags": [
+    "Desktop"
+  ],
+  "entryPoints": {
+    "desktopWidget": "DesktopWidget.qml"
+  },
+  "dependencies": {
+    "plugins": []
+  },
+  "metadata": {
+    "defaultSettings": {}
+  }
+}
